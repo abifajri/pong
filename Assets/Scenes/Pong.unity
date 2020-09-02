@@ -293,6 +293,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xInitialForce: 50
   yInitialForce: 15
+  speedX: 50
+  speedY: 15
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +581,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 18}
+  m_Size: {x: 1, y: 20}
   m_EdgeRadius: 0
 --- !u!114 &1149539483
 MonoBehaviour:
@@ -651,7 +653,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 18}
+  m_Size: {x: 1, y: 20}
   m_EdgeRadius: 0
 --- !u!114 &1221570087
 MonoBehaviour:

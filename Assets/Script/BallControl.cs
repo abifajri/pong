@@ -11,6 +11,9 @@ public class BallControl : MonoBehaviour
     public float xInitialForce;
     public float yInitialForce;
 
+    public float speedX;
+    public float speedY;
+
     // Titik asal lintasan bola saat ini
     private Vector2 trajectoryOrigin;
 
@@ -43,12 +46,13 @@ public class BallControl : MonoBehaviour
         if (randomDirection < 1.0f)
         {
             // Gunakan gaya untuk menggerakkan bola ini.
-            rigidBody2D.AddForce(new Vector2(-xInitialForce, yRandomInitialForce));
+            rigidBody2D.AddForce(new Vector2(-xInitialForce, yInitialForce));
         }
         else
         {
-            rigidBody2D.AddForce(new Vector2(xInitialForce, yRandomInitialForce));
+            rigidBody2D.AddForce(new Vector2(xInitialForce, yInitialForce));
         }
+
     }
 
     void RestartGame()
